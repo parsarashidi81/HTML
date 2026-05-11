@@ -4,11 +4,26 @@
     <title>Food menu</title>
     <style>
         body {
-            background-color: #E0DADA;
+            background-color: #F8F5F0;
+            color: #2c2c2c;
         }
 
-        p {
-            color: red;
+        #fd {
+            color: #D35400;
+        }
+
+        #dr {
+            color: #16A085;
+        }
+
+        #ds {
+            color: pink;
+        }
+
+        button{
+            background-color:#E67E22;
+            color:white;
+            border: #d0d0d0;
         }
     </style>
 </head>
@@ -17,7 +32,7 @@
 
     </style>
     <form>
-        <p>Choose your food:</p>
+        <p id="fd">Choose your food:</p>
         <input type="radio" id="poutine" name="food" value="poutine">
         <label for="poutine">Poutine</label>
         <br>
@@ -27,7 +42,7 @@
         <input type="radio" id="hamburger" name="food" value="hamburger">
         <label for="hamburger">Hamburger</label>
 
-        <p>Choose your drink:</p>
+        <p id="dr">Choose your drink:</p>
         <input type="checkbox" id="beer" name="drink" value="beer">
         <label for="beer">Beer</label>
         <br>
@@ -37,7 +52,7 @@
         <input type="checkbox" id="juice" name="drink" value="juice">
         <label for="juice">Juice</label>
 
-        <p>Dessert:
+        <p id="ds">Dessert:
         <select name="dessert">
             <option value="no dessert">No dessert</option>
             <option value="ice cream">Ice cream</option>
